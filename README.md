@@ -2,7 +2,7 @@
 
 **Fork and then clone me!**
 
-For parentheses to be considered balanced, there must an opening parenthesis followed by a matching closing parenthesis. Given a string containing only parentheses, return the number of additional parentheses needed for the string to be considered balanced.
+For parentheses to be considered balanced, there must an opening parenthesis followed by a matching closing parenthesis. Given a string containing only parentheses, return the number of additional parentheses needed for the string to be considered balanced. The input string will have a minimum length of 1.
 
 ```
 Input: '(()())'
