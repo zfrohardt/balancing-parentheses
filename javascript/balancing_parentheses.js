@@ -1,5 +1,21 @@
 function balancingParentheses(string) {
   // type your code here
+  return _balancingParens(string.split(""), [])
+}
+
+function _balancingParens(chars, stack) {
+  if (chars.length === 0) {
+    return stack.length
+  }
+
+  let paren = chars.shift();
+  if (paren === ")" && stack[stack.length - 1] == "(") {
+    stack.pop();
+  } else {
+    stack.push(paren);
+  }
+
+  return _balancingParens(chars, stack);
 }
 
 if (require.main === module) {
